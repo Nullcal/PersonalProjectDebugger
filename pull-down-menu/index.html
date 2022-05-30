@@ -3,8 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>チノちゃんえっちです！！！</title>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'qia5ard',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <script src="https://kit.fontawesome.com/cfd1cae778.js" crossorigin="anonymous"></script>
+    <script src="script/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="script/fontloader.js" charset="utf-8"></script>
+    <script src="script/main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-
+    <div class="wrapper">
+      <div class="menuer">
+        <div class="m-value m-opener flex-center">
+          <span>路線名を選択</span>
+        </div>
+        <div class="m-icon m-opener flex-center">
+          <span>↓</span>
+        </div>
+        <div class="m-dropdown">
+          <div class="m-search">
+            <input type="text" class="m-sinput" name="" value="" placeholder="入力して検索">
+          </div>
+          <div class="m-suggestion">
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="texter">
+        <div class="t-search">
+          <input type="text" class="t-sinput" name="" value="" placeholder="入力して検索">
+        </div>
+        <div class="t-dropdown">
+          <span class="t-info">もしかして...</span>
+          <div class="t-suggestion"></div>
+        </div>
+      </div>
+      <!---->
+      <img src="src/zundamon.gif" alt="">
+    </div>
   </body>
 </html>

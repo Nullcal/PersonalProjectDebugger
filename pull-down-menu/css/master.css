@@ -1,0 +1,161 @@
+* {
+  font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.menuer {
+  position: relative;
+  display: inline-flex;
+  height: 32px;
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: .2s;
+}
+.menuer:hover {
+  background: #eee;
+}
+
+.m-value {
+  height: 100%;
+  padding: 0 8px;
+}
+
+.m-icon {
+  padding: 0 8px;
+}
+
+.m-dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 32px;
+  padding: 8px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: .15s;
+}
+.m-open .m-dropdown {
+  top: 36px;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.m-search input {
+  transform: translateY(-1px);
+  width: 240px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  transition: .2s;
+}
+.m-search input:focus {
+  border-bottom: 1px solid #419ef4;
+}
+
+.m-suggestion {
+  padding-top: 8px;
+  color: #419ef4;
+}
+.m-suggestion a:hover {
+  text-decoration: underline;
+}
+
+
+
+.texter {
+  position: relative;
+  display: inline-flex;
+  height: 32px;
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: .2s;
+}
+
+.t-search input {
+  width: 240px;
+  height: calc(100% - 2px);
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding-left: 8px;
+  outline: none;
+  transition: .2s;
+}
+.t-search input:focus {
+  border: 1px solid #419ef4;
+}
+
+.t-info {
+  font-size: 12px;
+  color: #888;
+}
+
+.t-dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 32px;
+  padding: 8px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: .15s;
+}
+.t-open .t-dropdown {
+  top: 36px;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.t-suggestion {
+  padding-top: 8px;
+  color: #419ef4;
+}
+.t-suggestion a:hover {
+  text-decoration: underline;
+}
+
+
+
+img {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 96px;
+  height: 96px;
+}
