@@ -33,6 +33,15 @@ $(function() {
     ["JR仙石線", "じぇいあーるせんせきせん", "SensekiLine"],
     ["JR湘南新宿ライン", "じぇいあーるしょうなんしんじゅくらいん", "ShonanShinjukuLine"],
     ["東京臨海高速鉄道りんかい線", "とうきょうりんかいこうそくてつどうりんかいせん", "TokyoRinkaiKosokuTetsudoRinkaiLine"],
+    ["大宮", "おおみや", "Omiya"],
+    ["小山", "おやま", "Oyama"],
+    ["宇都宮", "うつのみや", "Utsunomiya"],
+    ["那須塩原", "なすしおばら", "NasuShiobara"],
+    ["新白河", "しんしらかわ", "ShinShirakawa"],
+    ["郡山", "こおりやま", "Koriyama"],
+    ["福島", "ふくしま", "Fukushima"],
+    ["白石蔵王", "しろいしざおう", "ShiroishiZao"],
+    ["仙台", "せんだい", "Sendai"],
   ];
   for (var i = 0; i < mLines.length; i++) {
     $(".m-suggestion").append(`<div class="ms-${i} m-suggest-link"><a>${mLines[i][0]}</a><br></div>`);
