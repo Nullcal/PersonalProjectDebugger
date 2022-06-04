@@ -1,0 +1,47 @@
+* {
+  font-family: a-otf-ud-shin-go-pr6n, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  user-select: none;
+}
+
+.field {
+  position: relative;
+  width: calc(100% - 96px);
+  height: 640px;
+  top: 36px;
+  left: 24px;
+  border: 1px solid #000;
+  background-image: url("../src/_youmu.png");
+  background-position: center;
+  background-size: cover;
+  filter: saturate(1.2);
+}
+
+.nd-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  backdrop-filter: blur(4px) saturate(10);
+}
+.nd-child:active {
+  outline: 4px solid rgba(255, 0, 230, 0.2);
+}
+
+.boxstyle {
+  width: 360px;
+  height: 360px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.nd-snap {
+  position: absolute;
+  width: 368px;
+  height: 368px;
+  border-radius: 8px;
+  outline: 4px solid rgb(0, 148, 255);
+  opacity: .2;
+}

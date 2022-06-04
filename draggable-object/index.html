@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>くっつける</title>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'qia5ard',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="script/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="script/fontloader.js" charset="utf-8"></script>
+    <script src="script/draggable.comp.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="field nd-parent">
+      <div class="nd-snap flexAlign" style="top: 240px; left: 360px;"></div>
+      <div class="nd-snap flexAlign" style="top: 540px; left: 420px;"></div>
+      <div class="nd-child boxstyle flexAlign"></div>
+      <div class="nd-child boxstyle flexAlign"></div>
+    </div>
+  </body>
+</html>
